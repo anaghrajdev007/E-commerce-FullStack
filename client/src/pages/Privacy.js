@@ -3,7 +3,7 @@ import Layout from "./../components/Layout/Layout";
 
 const privacy = () => {
   return (
-    <Layout>
+    <Layout title={"Privacy - ecommerce app"}>
       <div className="row contactus ">
         <div className="col-md-6 ">
           <img
