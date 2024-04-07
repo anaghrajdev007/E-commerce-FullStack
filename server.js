@@ -3,11 +3,13 @@ const colors = require('colors');
 require('dotenv').config()
 const morgan = require('morgan');
 const connectDB = require('./config/db');
+const cors = require('cors');
 connectDB();
 
 const app = express();
 app.use(express.json());
 app.use(morgan('dev'));
+app.use(cors());
 
 //Rest api
 

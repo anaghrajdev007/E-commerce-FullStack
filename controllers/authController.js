@@ -7,7 +7,7 @@ const registerController = async(req, res) =>{
         const {name,email, password , phone , address} = req.body;
         //Validation
         if(!name || !email || !password || !phone || !address){
-            return res.send({error:"All Fields are Manandatory"});
+            return res.send({message:"All Fields are Manandatory"});
         }
         //Existing User Check
 
