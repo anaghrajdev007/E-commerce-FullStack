@@ -9,6 +9,9 @@ router.post('/regester', auth_controller.registerController);
 //LOGIN CONTROLLER || POST
 router.post('/login', auth_controller.loginController);
 
+// FORGOT PASSWORD || POST
+router.post('/forgot-password', auth_controller.forgotPasswordController);
+
 //PROTECTED ROUTE AUTH
 router.get('/user-auth', auth_validator.requireSignIn, (req, res)=>{
     res.status(200).send({ok: true});
